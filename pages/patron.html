@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../pages/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stylePatron.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Buscador</title>
+
+    <style>
+        form {
+            text-align: center;
+            margin-top: 1rem;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu" style="background-color: #EEBF79;">
+        <a href="../pages/patron.html">BEM-VINDO</a>
+        <a href="/projeto/index.html">CARDAPIO</a>
+        <a href="../pages/contacto.html">CONTATO</a>
+        <a href="../pages/nuevos-clientes.html">PAGAMENTO</a>
+        <div class=" u-pull-right">
+            <ul>
+                <li class="submenu"><img src="../img/cart.png" id="img-carrito" class="logoBrand">
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+
+                        </table><a href="#" id="vaciar-carrito" class="button u-full-width">Carrinho Vazio</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bannerImg">
+        <h1 class="header__h1"><strong>PIZZA</strong></h1>
+    </header>
+    <form><input type="text" id="search" placeholder="Buscar..."><button id="btn-search">Buscar</button>
+    </form>
+    <main class="row ul" id="contenedor">
+        <section>
+            <div id="propostaPizza">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="https://github.com/SuarezRocio" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="container"><a href="#"><img src="../img/labenu.PNG" alt=""></i></a></div>
+        <p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+    </footer>
+    <script src="../js/info.js"></script>
+    <script src="../js/patron.js"></script>
+
+
+</body>
+
+</html>

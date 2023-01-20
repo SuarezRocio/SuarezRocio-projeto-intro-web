@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica' sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Arial' sans-serif;
+}
+
+.destaque {
+	color: orange;
+}
+
+header {
+	height: 40px;
+	padding: 10px;
+	color: white;
+	background: orange;
+	border-bottom: 25px groove black;
+}
+
+.banner {
+	height: 30vh;
+	width: 100%;
+	background: url('../img/bg02.png');
+	padding-bottom: 10vh;
+	object-fit: contain;
+}
+
+
+
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 30px auto;
+}
+
+
+footer {
+	background: black;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+.headerH1 {
+
+	position: absolute;
+	font-size: 3rem;
+	color: black;
+	z-index: 10;
+	top: 20%;
+	background-color: bisque;
+}
+
+.logoBrand {
+	max-width: 80px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+#modal {
+	display: none;
+}

@@ -1,0 +1,521 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+body {
+	background-image: url("../img/mantel.PNG");
+	height: 140vh;
+}
+
+#listaPizzas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 50px;
+	row-gap: 50px;
+	padding: 50px 0;
+}
+
+.contenedorPedido button {
+	border: none;
+	background: none;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+
+.navbar a {
+	height: fit-content;
+}
+
+.menu {
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background: #f99f24;
+	box-shadow: 5px 6px 9px rgba(0, 0, 0, 0.29);
+	border-radius: 20px;
+}
+
+.filtro {
+	display: none;
+}
+
+
+footer {
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
+nav a {
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 0.5rem;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	background-color: powderblue;
+	transition: background-color .5s;
+}
+
+a:hover {
+	background-color: rgb(0, 195, 255);
+	color: black;
+}
+
+.logoBrand {
+	max-width: 80px;
+}
+
+footer {
+	background-color: #2F4B0E;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Arial' sans-serif;
+}
+
+.tituloItems {
+	display: flex;
+	justify-content: center;
+}
+
+.destaque {
+	color: orange;
+}
+
+header {
+	height: 45vh;
+	padding: 10px;
+	color: white;
+	background-color: orange;
+	border-bottom: 25px groove black;
+}
+
+.bannerImg {
+	background: url('../img/pizzaHeader.PNG');
+	margin-top: 4vh;
+	padding-bottom: 2vh;
+	background-size: cover;
+	background-position: top center;
+	align-self: flex-start;
+	background-size: contain;
+
+}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+
+#contenedor {
+	color: rgb(243, 58, 58);
+	padding: 5px;
+	margin: 8px auto;
+	border-radius: 15px;
+	border: 10px solid rgb(169, 51, 37);
+	box-shadow: 10px 10px 0.6 rgb(255, 237, 138);
+	width: 1099px;
+	left: 16px;
+	top: 0px;
+}
+
+
+
+footer img {
+	height: 80px;
+	width: 80px;
+}
+
+footer,
+foopter i,
+footer img {
+	background-color: #2F4B0E;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 5vh;
+	object-fit: contain;
+
+}
+
+
+.fa-github .fa-envelope .fa-linkedin {
+	width: 16px;
+	height: 16px;
+}
+
+
+
+
+label,
+input {
+	margin: 1rem;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1rem;
+	background-color: #eebf799e;
+	max-width: 100%;
+	align-items: center;
+}
+
+.col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.ctncard {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	align-self: flex-start;
+	justify-content: space-around;
+	align-items: space-around;
+}
+
+
+
+.boxDobleArticle {
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	width: 350px;
+	height: 570px;
+	background-color: rgb(255, 254, 212);
+	border-radius: 15px;
+
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+
+	margin-left: 50px;
+	margin: 50px auto;
+}
+
+.boxDobleArticle p {
+	font-size: 16px;
+}
+
+.boxDobleArticle img {
+	height: auto;
+	width: 230px;
+	object-fit: cover;
+	align-self: center;
+	border-radius: 15px;
+}
+
+.boxDobleArticle button {
+	background: #a01005;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	width: 236px;
+	padding: 8px 0;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+}
+
+.boxDobleArticle button:hover {
+	background: #2f4b0e;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+
+.table,
+.tableSchedule {
+	width: 100%;
+	align-self: center;
+	padding: 2rem;
+}
+
+
+
+.postreName {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+.htable {
+	text-align: center;
+	display: inline;
+	font-size: 2rem;
+	background: #5900ff;
+	width: 300px;
+	color: #ffffff;
+	box-shadow: .5em 0 0 #071b7ef0, -.5em 0 0 #071b7ef0;
+	line-height: 3.3rem;
+	align-self: center;
+	align-items: center;
+}
+
+
+
+.imgPostre {
+	width: 100%;
+	min-height: 345px;
+	object-fit: cover;
+	align-self: center;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+
+main#contenedor.row.ul {
+	background-color: #F99F24;
+	height: 29vh;
+}
+
+
+
+.card-text {
+	color: #ffffff;
+}
+
+.card-body-contain {
+	background-color: rgb(255, 238, 141);
+	margin-left: 5rem;
+	width: 28rem;
+	margin-top: 2rem;
+}
+
+.carLd-img-top {
+	margin-left: 30rem;
+	width: 20%;
+	height: 20%;
+	border-radius: 5%;
+	background-color: #741d51;
+}
+
+.card-body {
+	width: 49%;
+	height: 30%;
+	margin-left: 1rem;
+	border-radius: 5%;
+}
+
+.list-group-item {
+	color: #ffffff;
+}
+
+
+/*nabvar*/
+#img-carrito {
+	height: 80px;
+}
+
+.borrar-curso {
+	background-color: red;
+	border-radius: 50%;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+}
+
+#hero {
+	background-image: url(../img/hero.jpg);
+	height: 350px;
+	background-size: cover;
+}
+
+#encabezado {
+	margin: 30px 0;
+}
+
+.submenu {
+	position: relative;
+}
+
+.submenu #carrito {
+	display: none;
+}
+
+.submenu:hover #carrito {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 1;
+	background-color: #EEBF79;
+	padding: 20px;
+	min-height: 400px;
+	min-width: 300px;
+}
+
+.vacio {
+	padding: 10px;
+	background-color: crimson;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+}
+
+.contenido-hero {
+	margin-top: 80px;
+	color: white;
+}
+
+.contenido-hero form {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+	height: 50px;
+	margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	padding: 0;
+	display: block;
+	text-indent: -9999px;
+	width: 50px;
+	background-image: url(../img/lupa.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+
+.barra {
+	padding: 20px 0;
+	background: #741d51;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+	    */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1);
+	/* IE6-9 */
+}
+
+.barra p {
+	margin: 0;
+	color: white;
+}
+
+.icono {
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 60px;
+	background-size: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+
+@media (max-width: 770px) {
+	body {
+
+		max-width: 700px
+	}
+
+	.icono {
+		margin-bottom: 0;
+	}
+
+
+	.icono1 {
+		background-image: url(../img/icono1.png);
+	}
+
+	.icono2 {
+		background-image: url(../img/icono2.png);
+	}
+
+	.icono3 {
+		background-image: url(../img/icono3.png);
+	}
+
+	#lista-cursos .row {
+		margin-bottom: 20px;
+	}
+
+	.agregar-carrito {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		min-width: 1440px;
+		align-self: center;
+		align-items: center;
+		justify-self: center;
+		justify-content: center;
+	}
+
+
+	main {
+		margin: 15px auto;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		width: 90%;
+
+
+	}
+}
