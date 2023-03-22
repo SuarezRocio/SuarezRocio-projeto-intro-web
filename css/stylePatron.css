@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 270vh;
+}
+
+.foto-carrito {
+    width: 200px;
+}
+
+#modalPedido {
+    display: none;
+    position: fixed;
+    background-color: #eebf79;
+    padding: 15px 45px;
+    justify-content: center;
+    top: 10%;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#modalPedido button {
+    background: #a01005;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+.contenedorModalPedido {
+    display: flex;
+    align-self: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contenedorCarrito {
+    margin-top: 15px;
+}
+
+.contenedorCarrito img {
+    border-radius: 20px;
+}
+
+#contenedor {
+    margin-left: 2rem;
+}
+
+.cardCarrito {
+    box-shadow: 5px 6px 9px rgba(0, 0, 0, 0.29);
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/*navbar*/
+#img-carrito {
+    height: 80px;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*#contenedor {
+    margin-left: 2rem;
+}**/
+
+ul {
+    list-style: none;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: flex;
+    /*position: absolute;*/
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #EEBF79;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+#imagenCarrito {
+    max-width: 15rem;
+}
+
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: #741d51;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+            */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1);
+    /* IE6-9 */
+}
+
+.barra p {
+    margin: 0;
+    color: white;
+}
+
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.u-full-width {
+    margin-top: 2rem;
+}
+
+.section-1,
+.section-2 {
+    background-color: #eebf79c9;
+    border-radius: 5%;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.section__title {
+    padding: 2rem;
+    text-align: center;
+}
+
+.text__simple {
+    text-align: center;
+}
+
+
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+
+
+    .icono1 {
+        background-image: url(../img/icono1.png);
+    }
+
+    .icono2 {
+        background-image: url(../img/icono2.png);
+    }
+
+    .icono3 {
+        background-image: url(../img/icono3.png);
+    }
+
+    #lista-cursos .row {
+        margin-bottom: 20px;
+    }
+
+    .agregar-carrito {
+        margin: 10px 0;
+    }
+
+    footer img {
+        height: 80px;
+        width: 80px;
+    }
+
+    footer,
+    foopter i,
+    footer img {
+        background-color: #2F4B0E;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+        object-fit: contain;
+
+    }
+}
